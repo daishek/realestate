@@ -1,5 +1,6 @@
 import Head from "next/head"
 import { Box } from "@chakra-ui/layout"
+import { Navbar, Footer } from "."
 
 
 const Layout = ({ children }) => {
@@ -11,9 +12,9 @@ const Layout = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Box maxWidth="1280px" m="auto">
-                <header>Navbar</header>
+                <header><Navbar /></header>
                 <main>{children}</main>
-                <footer>Footer</footer>
+                <footer><Footer /></footer>
             </Box>
         </div>
     )
